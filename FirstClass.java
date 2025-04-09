@@ -215,39 +215,481 @@
 
 // !_______________________ Print Student Numbers _____________________!
 
-import java.util.*;
+// import java.util.*;
 
+// public class FirstClass {
+
+//     public static void main(String[] args){
+      
+//         Scanner sc =new Scanner(System.in);
+//         int userChoice;
+//         do{
+//              System.out.println("marks driven system");
+//              userChoice =sc.nextInt();
+//              if(userChoice == 1){
+//                 System.out.println("inter marks");
+//                 int marks;
+//                 marks=sc.nextInt();
+//               do{
+//                 marks = sc.nextInt();
+//                 if(marks >=90 ){
+//                     System.out.println("This is Good");
+//                 }else if(89 >= marks && marks >= 60){
+//                     System.out.println("This is also good");
+//                 }else if(59 >= marks && marks >= 0){
+//                  System.out.println("This is Good as well");
+//                 }else if(marks != -1){
+//                     System.out.println("invalid value please enter value greater then 1");
+//                 }
+//               }while(marks != -1);
+             
+//             }
+//         }while(userChoice !=0);
+    
+    
+//      sc.close();
+//     };
+    
+// }
+
+
+//  !_________________________________ Patterns in java _____________________!
+
+//    *********
+//    *********
+//    *********
+//    *********
+//    *********
+// import java.util.*;
+
+// public class FirstClass {
+
+//     public static void main(String[] args){
+      
+//         Scanner sc =new Scanner(System.in);
+//         int n =sc.nextInt();
+//         for(int i=0;i<n;i++){
+
+//             for(int j=0;j<5;j++){
+
+//                 System.out.print("*");
+//             }
+
+//             System.out.println();
+//         }
+//      sc.close();
+//     };
+    
+// }
+
+
+
+
+// !________________ Hollo Pattern __________________________!
+
+// ****
+// *  *
+// *  *
+// ****
+
+// import java.util.*;
+
+// public class FirstClass {
+
+//     public static void main(String[] args){
+      
+//         Scanner sc =new Scanner(System.in);
+//         int n =sc.nextInt();
+//         int m =sc.nextInt();
+
+//     for(int i=1;i<= n;i++){
+           
+//                 // Print 2 stars for the second and third lines
+//                 for (int j = 1; j <= m; j++) {
+//                 if(i == 1 || j == 1 || i == n || j == m){
+//                     System.out.print("*");
+//                 } else{
+//                     System.out.print(" ");
+//                 }
+//                 }
+
+//             System.out.println();
+//         }
+//      sc.close();
+//     };
+    
+// }
+
+
+
+
+// !_____________ Pyramid _______________________!
+
+// import java.util.*;
+
+// public class FirstClass {
+
+//     public static void main(String[] args){
+      
+//         Scanner sc =new Scanner(System.in);
+//         int n =sc.nextInt();
+    
+
+//     for(int i=1;i<= n;i++){
+           
+//                 // Print 2 stars for the second and third lines
+//                 for (int j = 1; j <= i; j++) {
+//                 System.out.print("*");
+//                 }
+
+//             System.out.println();
+//         }
+//      sc.close();
+//     };
+    
+// }
+
+
+
+// import java.util.*;
+
+// public class FirstClass {
+
+//     public static void main(String[] args){
+      
+//         Scanner sc =new Scanner(System.in);
+//         int n =sc.nextInt();
+    
+
+//     for(int i=n;i > 0;i--){
+           
+//         // System.out.println("*");
+//                 // // Print 2 stars for the second and third lines
+//                 for (int j = 1; j <= i; j++) {
+//                 System.out.print("*");
+//                 }
+
+//             System.out.println();
+//         }
+//      sc.close();
+//     };
+    
+// }
+
+
+
+// import java.util.*;
+
+// public class FirstClass {
+
+//     public static void main(String[] args){
+      
+//         Scanner sc =new Scanner(System.in);
+//         int n =sc.nextInt();
+    
+
+//     for(int i=n;i > 0;i--){
+           
+//         // System.out.println("*");
+//                 // // Print 2 stars for the second and third lines
+//                 for (int j = 1; j <= i; j++) {
+//                 System.out.print(j);
+//                 }
+
+//             System.out.println();
+//         }
+//      sc.close();
+//     };
+    
+// }
+
+
+
+
+// import java.util.*;
+
+// public class FirstClass {
+
+//     public static void main(String[] args){
+      
+//         Scanner sc =new Scanner(System.in);
+//         int n =sc.nextInt();
+    
+
+//     for(int i=1;i <= n;i++){
+           
+//         // System.out.println("*");
+//                 // // Print 2 stars for the second and third lines
+//                 for (int j = 1; j <= i; j++) {
+//                 System.out.print(j);
+//                 }
+
+//             System.out.println();
+//         }
+//      sc.close();
+//     };
+    
+// }
+
+
+
+// butterfly Pattern
+
+
+// public class FirstClass {
+
+//     public static void main(String[] args){
+      
+//        int n= 5;
+//     for(int i=1;i<=n;i++){
+//                 for (int j = 1; j <= i; j++) {
+//                 System.out.print("*");
+//                 }
+
+//                 int sapces=2*(n-i);
+//                 for(int j=1;j<=sapces;j++){
+//                     System.out.print(" ");
+//                 }
+
+//                 for (int j = 1; j <= i; j++) {
+//                     System.out.print("*");
+//                     }
+//                 System.out.println();
+//                }
+               
+//               for(int i=n;i>=1;i--){
+//                 for (int j = 1; j <= i; j++) {
+//                 System.out.print("*");
+//                 }
+
+//                 int sapces=2*(n-i);
+//                 for(int j=1;j<=sapces;j++){
+//                     System.out.print(" ");
+//                 }
+
+//                 for (int j = 1; j <= i; j++) {
+//                     System.out.print("*");
+//                     }
+//                 System.out.println();
+//                }
+ 
+//     };
+    
+// }
+
+
+// Number Pyramid 
+// public class FirstClass {
+
+//     public static void main(String[] args){
+      
+//        int n= 5;
+//     for(int i=1;i<=n;i++){
+                  
+        
+//                 for(int k=1;k<=n-i;k++){
+//                         System.out.print(" "); 
+//                     }
+
+//                     for(int k=1;k<=5;k++){
+//                         System.out.print("*"); 
+//                     }
+//                     System.out.println();
+             
+             
+//                 }
+                      
+//     };
+    
+// }
+
+
+// Number Pyramid
+// public class FirstClass {
+
+//     public static void main(String[] args){
+      
+//        int n= 5;
+//     for(int i=1;i<=5;i++){
+
+//         for(int j=1;j<=n-i;j++){
+//             System.out.print(" ");
+//         }
+//         for(int j=1;j<=i;j++){
+//             System.out.print(i + " ");
+//         }
+//         System.out.println();
+//     }
+//     }
+
+//     }
+    
+
+// palaydromic pyramid
+
+// public class FirstClass {
+
+//     public static void main(String[] args){
+      
+//        int n= 5;
+//     for(int i=1;i<=5;i++){
+
+//         for(int j=1;j<=n-i;j++){
+//             System.out.print(" ");
+//         }
+//         for(int j=i;j>=1;j--){
+            
+//             System.out.print(j);
+//         }
+
+//         for(int j=2;j<=i;j++){
+//             System.out.print(j);
+//         }
+//         System.out.println();
+//     }
+//     }
+
+//     }
+
+
+
+// Diamond Pattern
+    
+// public class FirstClass {
+
+//     public static void main(String[] args){
+      
+//        int n= 7;
+//     for(int i=1;i<=n;i++){
+
+//         for(int j=1;j<=n-i;j++){
+//             System.out.print(" ");
+//         }
+//         for(int j = 1; j <= 2 * i-1; j++) {
+//             System.out.print("*" );
+//         }
+//         System.out.println(); 
+//     }
+//     // 2nd half
+//     for(int i=n;i>=1;i--){
+
+//         for(int j=1;j<=n-i;j++){
+//             System.out.print(" ");
+//         }
+//         for(int j = 1; j <= 2 * i-1; j++) {
+//             System.out.print("*" );
+//         }
+//         System.out.println(); 
+//     }
+//     }
+
+//     }
+    
+
+
+
+// Finctions And Methods in java
+// import java.util.*;
+// public class FirstClass {
+
+//     public static void myname(String name){
+//         System.out.println(name);
+//          return;
+//     }
+
+//     public static void main(String args[]){
+//         Scanner sc=new Scanner(System.in);
+//         String name=sc.next();
+//         myname(name);
+//     }
+     
+// }
+
+
+// sum of two numbers
+
+// import java.util.*;
+// public class FirstClass {
+
+//     public static void sum(int a,int b){
+//         System.out.println(a+b);
+//          return;
+//     }
+
+//     public static void main(String args[]){
+//         Scanner sc=new Scanner(System.in);
+//         int a=sc.nextInt();
+//         int b=sc.nextInt();
+//        sum(a,b);
+//     }
+     
+// }
+
+
+// return sum
+// import java.util.*;
+// public class FirstClass {
+
+//     public static int sum(int a,int b){
+//         int sum=a+b;
+//          return sum;
+//     }
+
+//     public static void main(String args[]){
+//         Scanner sc=new Scanner(System.in);
+//         int a=sc.nextInt();
+//         int b=sc.nextInt();
+//        int sum=sum(a,b);
+//        System.out.println("sum of two numbers"+ sum);
+//     }
+     
+// }
+
+
+// factorial of number
+// import java.util.*;
+// public class FirstClass {
+
+//     public static int factorial(int a){
+//         int num=1;
+//         for(int i=1;i <= a;i++){
+//             num *= i;
+//         }
+//         return num;
+//     }
+
+//     public static void main(String args[]){
+//         Scanner sc=new Scanner(System.in);
+//         int a=sc.nextInt();
+//        int factorial=factorial(a);
+//        System.out.println("factorial of num"+ factorial);
+//     }
+     
+// }
+
+
+// Fibonacci
+
+import java.util.*;
 public class FirstClass {
 
-    public static void main(String[] args){
+    public static void Fibonacci(){
+        int a=0; int b=1;
+        for(int i=1;i<=10;i++){
+            System.out.print(a + " ");
+            int next=a+b;
+            a=b;
+            b=next;
+        }
+       
+    }
+
+    public static void main(String args[]){
+        // Scanner sc=new Scanner(System.in);
       
-        Scanner sc =new Scanner(System.in);
-        int userChoice;
-        do{
-             System.out.println("marks driven system");
-             userChoice =sc.nextInt();
-             if(userChoice == 1){
-                System.out.println("inter marks");
-                int marks;
-                marks=sc.nextInt();
-              do{
-                marks = sc.nextInt();
-                if(marks >=90 ){
-                    System.out.println("This is Good");
-                }else if(89 >= marks && marks >= 60){
-                    System.out.println("This is also good");
-                }else if(59 >= marks && marks >= 0){
-                 System.out.println("This is Good as well");
-                }else if(marks != -1){
-                    System.out.println("invalid value please enter value greater then 1");
-                }
-              }while(marks != -1);
-             
-            }
-        }while(userChoice !=0);
-    
-    
-     sc.close();
-    };
-    
+         Fibonacci();
+      
+    }
+     
 }
+

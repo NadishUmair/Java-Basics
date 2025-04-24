@@ -670,26 +670,57 @@
 
 // Fibonacci
 
-import java.util.*;
-public class FirstClass {
+// import java.util.*;
+// public class FirstClass {
 
-    public static void Fibonacci(){
-        int a=0; int b=1;
-        for(int i=1;i<=10;i++){
-            System.out.print(a + " ");
-            int next=a+b;
-            a=b;
-            b=next;
-        }
+//     public static void Fibonacci(){
+//         int a=0; int b=1;
+//         for(int i=1;i<=10;i++){
+//             System.out.print(a + " ");
+//             int next=a+b;
+//             a=b;
+//             b=next;
+//         }
        
-    }
+//     }
+
+//     public static void main(String args[]){
+//         // Scanner sc=new Scanner(System.in);
+      
+//          Fibonacci();
+      
+//     }
+     
+// }
+
+
+ class Pen {
+  String color;
+  String type;
+   
+  Pen() {
+    System.out.println("use for writing");
+}
+  public void write(){
+    System.out.println("writing something");
+  }
+  public void printColor(){
+    System.out.println(this.color);
+  }
+ }
+
+
+public class OOPS{
 
     public static void main(String args[]){
-        // Scanner sc=new Scanner(System.in);
-      
-         Fibonacci();
-      
-    }
-     
-}
+        Pen pen1=new Pen();
+        pen1.color="blue";
+        Pen pen2=new Pen();
+        pen2.color="red";
 
+        pen1.write();
+        pen1.printColor();
+        pen2.printColor();
+    }
+    
+}

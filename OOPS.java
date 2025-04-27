@@ -694,17 +694,50 @@
 // }
 
 
+//  class Pen {
+//   String color;
+//   String type;
+   
+//   Pen() {
+//     System.out.println("use for writing");
+// }
+//   public void write(){
+//     System.out.println("writing something");
+//   }
+//   public void printColor(){
+//     System.out.println(this.color);
+//   }
+//  }
+
+
+// public class OOPS{
+
+//     public static void main(String args[]){
+//         Pen pen1=new Pen();
+//         pen1.color="blue";
+//         Pen pen2=new Pen();
+//         pen2.color="red";
+
+//         pen1.write();
+//         pen1.printColor();
+//         pen2.printColor();
+//     }
+    
+// }
+
+
  class Pen {
   String color;
   String type;
+  Integer price;
    
   Pen() {
     System.out.println("use for writing");
 }
-  public void write(){
-    System.out.println("writing something");
+  public void write(int price){
+    System.out.println(this.price);
   }
-  public void printColor(){
+  public void write(String color){
     System.out.println(this.color);
   }
  }
@@ -717,10 +750,11 @@ public class OOPS{
         pen1.color="blue";
         Pen pen2=new Pen();
         pen2.color="red";
+        pen1.price=24;
 
-        pen1.write();
-        pen1.printColor();
-        pen2.printColor();
+        pen1.write(pen1.price);
+        pen1.write(pen1.color);
+        
     }
     
 }

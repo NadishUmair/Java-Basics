@@ -726,35 +726,141 @@
 // }
 
 
- class Pen {
-  String color;
-  String type;
-  Integer price;
+//  class Pen {
+//   String color;
+//   String type;
+//   Integer price;
    
-  Pen() {
-    System.out.println("use for writing");
-}
-  public void write(int price){
-    System.out.println(this.price);
-  }
-  public void write(String color){
-    System.out.println(this.color);
-  }
- }
+//   Pen() {
+//     System.out.println("use for writing");
+// }
+//   public void write(int price){
+//     System.out.println(this.price);
+//   }
+//   public void write(String color){
+//     System.out.println(this.color);
+//   }
+//  }
 
 
+// public class OOPS{
+
+//     public static void main(String args[]){
+//         Pen pen1=new Pen();
+//         pen1.color="blue";
+//         Pen pen2=new Pen();
+//         pen2.color="red";
+//         pen1.price=24;
+
+//         pen1.write(pen1.price);
+//         pen1.write(pen1.color);
+        
+//     }
+    
+// }
+
+// import java.util.*;
+// public class OOPS{
+
+//     public static void main(String args[]){
+//       Scanner sc=new Scanner(System.in);
+//       int size=sc.nextInt();
+      
+//       int marks[]=new int[size];
+//       for(int i=0;i<size;i++){
+//         marks[i]=sc.nextInt();
+//       }
+//       for(int i=marks.length-1;i>=0;i--){
+//         System.out.println(marks[i]);
+//       }
+
+        
+//     }
+    
+// }
+
+
+// find x number
+
+// import java.util.*;
+// public class OOPS{
+
+//     public static void main(String args[]){
+//       Scanner sc=new Scanner(System.in);
+//       int size=sc.nextInt();
+//       sc.nextLine();
+//       int takexnumber=sc.nextInt();
+      
+//       int numbers[]=new int[size];
+//       for(int i=0;i<size;i++){
+//         numbers[i]=sc.nextInt();
+//       }
+
+//       for(int i=0;i<size;i++){
+//         if(takexnumber == numbers[i]){
+//           System.out.println("found number here" + numbers[i]);
+//         } 
+//       }
+      
+
+        
+//     }
+    
+// }
+
+
+// 2 d Array
+// import java.util.*;
+// public class OOPS{
+
+//     public static void main(String args[]){
+//       Scanner sc=new Scanner(System.in);
+//       int row=sc.nextInt();
+//       int col=sc.nextInt();
+//       int numbers[][] = new int[row][col];
+      
+//       for(int i=0;i<row;i++){
+//         for(int j=0;j<col;j++){
+//           numbers[i][j]=sc.nextInt();
+//         }
+//       }
+      
+//       for (int i=0;i<row;i++){
+//         for (int j=0;j<col;j++){
+//           System.out.print(numbers[i][j]+ " ");
+//         }
+//         System.out.println();
+//       } 
+//     }
+    
+// }
+
+
+// find x number form 2 D array
+import java.util.*;
 public class OOPS{
 
     public static void main(String args[]){
-        Pen pen1=new Pen();
-        pen1.color="blue";
-        Pen pen2=new Pen();
-        pen2.color="red";
-        pen1.price=24;
+      Scanner sc=new Scanner(System.in);
+      int row=sc.nextInt();
+      int col=sc.nextInt();
+      int numbers[][] = new int[row][col];
+      
+      for(int i=0;i<row;i++){
+        for(int j=0;j<col;j++){
+          numbers[i][j]=sc.nextInt();
+        }
+      }
+       int x=sc.nextInt();
+      for (int i=0;i<row;i++){
+        for (int j=0;j<col;j++){
+          if(numbers[i][j] ==  x){
 
-        pen1.write(pen1.price);
-        pen1.write(pen1.color);
-        
+            System.out.print("x found at location ("+i+","+j+")" );
+          }
+        }
+    
+      } 
     }
     
 }

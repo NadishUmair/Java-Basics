@@ -1,3 +1,4 @@
+import java.util.*;
 // class FirstClass{
 //     public static void main(String[] args){
 //         System.out.println("hello world");
@@ -837,30 +838,65 @@
 
 
 // find x number form 2 D array
-import java.util.*;
-public class OOPS{
+// import java.util.*;
+// public class OOPS{
 
-    public static void main(String args[]){
-      Scanner sc=new Scanner(System.in);
-      int row=sc.nextInt();
-      int col=sc.nextInt();
-      int numbers[][] = new int[row][col];
+//     public static void main(String args[]){
+//       Scanner sc=new Scanner(System.in);
+//       int row=sc.nextInt();
+//       int col=sc.nextInt();
+//       int numbers[][] = new int[row][col];
       
-      for(int i=0;i<row;i++){
-        for(int j=0;j<col;j++){
-          numbers[i][j]=sc.nextInt();
-        }
-      }
-       int x=sc.nextInt();
-      for (int i=0;i<row;i++){
-        for (int j=0;j<col;j++){
-          if(numbers[i][j] ==  x){
+//       for(int i=0;i<row;i++){
+//         for(int j=0;j<col;j++){
+//           numbers[i][j]=sc.nextInt();
+//         }
+//       }
+//        int x=sc.nextInt();
+//       for (int i=0;i<row;i++){
+//         for (int j=0;j<col;j++){
+//           if(numbers[i][j] ==  x){
 
-            System.out.print("x found at location ("+i+","+j+")" );
-          }
-        }
+//             System.out.print("x found at location ("+i+","+j+")" );
+//           }
+//         }
     
-      } 
-    }
+//       } 
+//     }
     
+// }
+
+
+// public class OOPS {
+
+
+//   public static void main(String[] args) {
+//     String name1="nadish umair was a student of bsit";
+//     String name2="nadish";
+    //  if(name1.compareTo(name2) ==0){
+    //   System.out.println("same strings");
+    //  }else{
+    //   System.out.println("different string");
+    //  }
+       
+    // String subStr= name1.substring(10,name1.length());
+    // System.out.println(subStr);
+    // for(int i=0;i<name.length();i++){
+    //   // System.out.println("caracters" + " " + name.charAt(i));
+    // }
+//   }
+// }
+
+
+public class OOPS {
+
+
+  public static void main(String[] args) {
+   StringBuilder name=new StringBuilder("Nadish");
+   System.out.println(name);
+   System.out.println(name.charAt(0));
+
+   System.out.println(name.setCharAt(0, "I"););
+
+  }
 }

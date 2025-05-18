@@ -888,15 +888,68 @@ import java.util.*;
 // }
 
 
+// public class OOPS {
+
+
+//   public static void main(String[] args) {
+//    StringBuilder name=new StringBuilder("Nadish");
+//    System.out.println(name);
+//    System.out.println(name.charAt(0));
+//    name.setCharAt(0, 'I');
+//    System.out.println(name);
+//   name.insert(0,'h');
+//   System.out.println(name);
+//   name.delete(3, 5);
+//   System.out.println(name);
+//   name.append("m");
+//   System.out.println(name);
+
+//   }
+// }
+
+// public class OOPS {
+
+
+//   public static void main(String[] args) {
+//   String name="Nadish";
+//    String reversed ="";
+//    for(int i=name.length()-1;i>=0;i--){
+//     reversed +=name.charAt(i);
+//    }
+// System.out.println(reversed);
+//   }
+// }
+
+// public class OOPS {
+
+
+//   public static void main(String[] args) {
+//   StringBuilder name=new StringBuilder("Nadish");
+  
+//    for(int i=0;i<name.length()/2;i++){
+//     System.out.println(i);
+//     int front=i;
+//     int back= name.length()-1-i;
+//     char frontChar= name.charAt(front);
+//     char backChar= name.charAt(back);
+//     name.setCharAt(front, backChar);
+//     name.setCharAt(back, frontChar);
+//    }
+//    System.out.println(name);
+
+//   }
+// }
+
 public class OOPS {
 
 
   public static void main(String[] args) {
-   StringBuilder name=new StringBuilder("Nadish");
-   System.out.println(name);
-   System.out.println(name.charAt(0));
+  int num=5;
+   int pos=1;
+   int bitMask=1<<pos;
 
-   System.out.println(name.setCharAt(0, "I"););
+   int newNum=bitMask | num;
+   System.out.println(newNum);
 
   }
 }

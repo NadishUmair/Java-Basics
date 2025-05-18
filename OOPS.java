@@ -940,16 +940,77 @@ import java.util.*;
 //   }
 // }
 
+// public class OOPS {
+
+
+//   public static void main(String[] args) {
+//   int num=5;
+//    int pos=1;
+//    int bitMask=1<<pos;
+
+//    int newNum=bitMask | num;
+//    System.out.println(newNum);
+
+//   }
+// }
+
+
+//bubble sort
+// public class OOPS {
+
+// public static void printArray(int array[]){
+//   for(int i=0;i<array.length;i++){
+//     System.out.println(array[i]);
+//   }
+
+// };
+
+//   public static void main(String[] args) {
+//     // time complexity O(n^2)
+//     int arr[] = {3, 4, 5, 8, 9, 2};
+//     for (int i = 0; i < arr.length - 1; i++) {
+//       System.out.println("Element: " + arr[i]);
+//       for(int j=0;j<arr.length-i-1;j++){
+//           if(arr[j] > arr[j+1]){
+//             int temp=arr[j];
+//             arr[j]=arr[j+1];
+//             arr[j+1]=temp;
+//           }
+//       }
+//     }
+//     printArray(arr);
+//   }
+// }
+
+
+//selection sort
 public class OOPS {
 
+public static void printArray(int array[]){
+  for(int i=0;i<array.length;i++){
+    System.out.println(array[i]);
+  }
 
-  public static void main(String[] args) {
-  int num=5;
-   int pos=1;
-   int bitMask=1<<pos;
+};
+  public static void main(String args[]){
+    int arr[]={2,4,5,6,9,3};
+     for(int i=0;i<arr.length;i++){
+      System.out.println("Element: " + arr[i]);
+      int smallest=i;
 
-   int newNum=bitMask | num;
-   System.out.println(newNum);
+      for(int j=i+1;j<arr.length;j++){
+        System.out.println("ele" + arr[j]);
+        if(arr[smallest]>arr[j]){
+          smallest=j;
+
+        }
+      }
+      System.out.println("arr" + arr[i]);
+      int temp=arr[smallest];
+      arr[smallest]=arr[i];
+      arr[i]=temp;
+   }
+  printArray(arr);
 
   }
 }
